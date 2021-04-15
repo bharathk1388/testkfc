@@ -1,0 +1,20 @@
+{
+  "name": "kfc",
+  "version": "1.0.0",
+  "description": "Cypress test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open"
+  },
+  "keywords": [
+    "e2e",
+    "test",
+    "cypress"
+  ],
+  "author": "Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.1.0"
+  }
+}
