@@ -47,7 +47,8 @@ test('Adding Products to the Cart', async ({ page }) => {
     await page.click('#add-to-cart-sauce-labs-onesie');
     await page.click('#add-to-cart-sauce-labs-bike-light')
     await page.click("a[data-test='shopping-cart-link']")
-    await waitFor2seconds();
+    await page.waitForSelector("//div[contains(text(),'Sauce Labs Bike Light')]")
+
     // verication of added products in the cart. 
     const saucelabbacklight= page.locator("//div[contains(text(),'Sauce Labs Bike Light')]")
     expect(saucelabbacklight).toBeVisible()
@@ -65,7 +66,7 @@ test('Adding Products to the Cart', async ({ page }) => {
     await page.click('#add-to-cart-sauce-labs-onesie');
     await page.click('#add-to-cart-sauce-labs-bike-light')
     await page.click("a[data-test='shopping-cart-link']")
-    await waitFor2seconds();
+    await page.waitForSelector("//div[contains(text(),'Sauce Labs Bike Light')]")
 
     const saucelabbacklight= page.locator("//div[contains(text(),'Sauce Labs Bike Light')]")
     expect(saucelabbacklight).toBeVisible()
