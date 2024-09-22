@@ -1,0 +1,9 @@
+{
+    "userName":"standard_user",
+    "password":"secret_sauce",
+    "wronguserName":"standarduser",
+    "wrongPassword":"secretsauce",
+    "firstName":"test fname",
+    "lastName":"test lname",
+    "postalCode":"40053"
+}
