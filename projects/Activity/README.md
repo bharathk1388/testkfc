@@ -60,6 +60,7 @@ After installation you find in left side of visual studio editor the following f
 ```npx playwright -g``` 
 
 ### How to Run the Scripts
+```cd \projects\Activity```
 -> Headless
 ```npx playwright test activity.spec.js```
 * "The test data must be located in the test.json file."
